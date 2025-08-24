@@ -24,8 +24,6 @@ def browserInitialise(request):
         driver = webdriver.Ie()
     elif browser_name == "edge":
         driver = webdriver.Edge()
-    elif browser_name == "safari":
-        driver = webdriver.Safari()
     else:
         raise ValueError(f"Unsupported browser: {browser_name}")
 
